@@ -533,7 +533,7 @@ upcoming lesson.
 <br>
 
 ---
-
+<!--
 ## Managing your environment
 
 There are a few useful commands you can use to interact with the R session.
@@ -553,11 +553,11 @@ ls()
 
 ~~~
 
-<!--sec data-title="Tip: Hidden objects" data-id="tip4" data-show=true data-collapse=true ces-->
+<!--sec data-title="Tip: Hidden objects" data-id="tip4" data-show=true data-collapse=true ces-- >
 
 Just like in the shell, `ls` will hide any variables or functions starting with a "." by default. To list all objects, type `ls(all.names=TRUE)` instead
 
-<!--endsec-->
+<!--endsec-- >
 
 Note here that we didn't given any arguments to `ls`, but we still
 needed to give the parentheses to tell R to call the function.
@@ -603,7 +603,7 @@ function (name, pos = -1L, envir = as.environment(pos), all.names = FALSE,
     }
     else all.names
 }
-<bytecode: 0x34ad398>
+<bytecode: 0x34894c8>
 <environment: namespace:base>
 
 ~~~
@@ -645,13 +645,13 @@ Error in rm(list <- ls()): ... must contain names or character strings
 
 ~~~
 
-<!--sec data-title="Tip: Warnings vs. Errors" data-id="tip5" data-show=true data-collapse=true ces-->
+<!--sec data-title="Tip: Warnings vs. Errors" data-id="tip5" data-show=true data-collapse=true ces-- >
 
 Pay attention when R does something unexpected! Errors, like above, are thrown when R cannot proceed with a calculation. Warnings on the other hand usually mean that the function has run, but it probably hasn't worked as expected.
 
 In both cases, the message that R prints out usually give you clues how to fix a problem.
 
-<!--endsec-->
+<!--endsec-- >
 
 <br>
 
@@ -672,7 +672,7 @@ network). R and RStudio have functionality for managing packages:
 * You can remove a package with `remove.packages("packagename")`
 * You can make a package available for use with `library(packagename)`
 
-<!--sec data-title="Challenge 1" data-id="ch1" data-show=true data-collapse=false ces-->
+<!--sec data-title="Challenge 1" data-id="ch1" data-show=true data-collapse=false ces-- >
 Which of the following are valid R variable names?
 
 ~~~sourcecode
@@ -686,8 +686,9 @@ Which of the following are valid R variable names?
 > celsius2kelvin
 ~~~
 
-<!--endsec-->
+<!--endsec-- >
 
+--->
 
 <!--sec data-title="Challenge 2" data-id="ch2" data-show=true data-collapse=false ces-->
 
@@ -709,13 +710,13 @@ Run the code from the previous challenge, and write a command to compare mass to
 
 <!--endsec-->
 
-<!--sec data-title="Challenge 4" data-id="ch4" data-show=true data-collapse=false ces-->
+<!--sec data-title="Challenge 4" data-id="ch4" data-show=true data-collapse=false ces-- >
 
 Clean up your working environment by deleting the mass and age variables.
 
 <!--endsec-->
 
-<!--sec data-title="Chellenge 5" data-id="ch5" data-show=true data-collapse=false ces-->
+<!--sec data-title="Chellenge 5" data-id="ch5" data-show=true data-collapse=false ces-- >
 
 Install the following packages: `dplyr`, `tidyr`
 
